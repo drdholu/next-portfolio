@@ -30,10 +30,10 @@ export function Landing() {
                 scale: 0,
                 position: "absolute",
               }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left "
             >
             Hi, I&apos;m <br/>
-            Paras Dhole
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">Paras Dhole</span>
             <br />
             {/* <Highlight className="">
                 A <FlipWords words={words} /> 

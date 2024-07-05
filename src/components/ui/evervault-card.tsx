@@ -1,6 +1,6 @@
 "use client";
 import { useMotionValue } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 
@@ -8,7 +8,7 @@ export const EvervaultCard = ({
   text,
   className,
 }: {
-  text?: string;
+  text?: ReactNode;
   className?: string;
 }) => {
   let mouseX = useMotionValue(0);
