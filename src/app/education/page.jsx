@@ -1,8 +1,13 @@
+'use client'
+import GoBack from '@/components/GoBack'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>education</div>
+    <div>
+      education
+      <GoBack/>
+    </div>
   )
 }
 

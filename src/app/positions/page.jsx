@@ -1,8 +1,14 @@
+'use client'
 import React from 'react'
+import GoBack from '@/components/GoBack'
 
 const page = () => {
   return (
-    <div>positions</div>
+    <div>
+      positions
+      <GoBack/>
+    </div>
+    
   )
 }
 
