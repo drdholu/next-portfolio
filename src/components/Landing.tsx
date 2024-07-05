@@ -40,7 +40,22 @@ export function Landing() {
             </Highlight> */}
             </motion.h1>
             <div>
-                <BentoGridDemo />
+                <motion.div
+                initial={{
+                    opacity: 0,
+                    y: 20,
+                }}
+                animate={{
+                    opacity: 1,
+                    y: [20, -5, 0],
+                }}
+                transition={{
+                    duration: 1,
+                    ease: [0.4, 0.0, 0.2, 1],
+                }}
+                >
+                    <BentoGridDemo />
+                </motion.div>
             </div>
         </div>
         // </HeroHighlight>
