@@ -9,6 +9,9 @@ module.exports = {
   darkMode: "media",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Onest'],
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },

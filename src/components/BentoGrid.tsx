@@ -40,19 +40,19 @@ const Skeleton = ({ icon }: { icon: React.ReactNode }) => (
 const items = [
   {
     title: "Web Development Skills",
-    description: "Proficient in HTML5, CSS, JavaScript, ReactJS, ExpressJS, NodeJS, Django, React-Native",
+    description: "Proficient in multiple languages (C++, Java, etc.) and tech stacks.",
     header: <Skeleton icon={<IconCode className="h-6 w-6 text-neutral-500" />}/>,
     icon: <IconCode className="h-6 w-6 text-neutral-500" />,
   },
   {
     title: "Key Projects",
-    description: "Unified Student Portal, Paint Store App, Dynamic Allocation Framework using van Emde Boas Trees",
+    description: "Worked on multiple personal projects and contributed to many.",
     header: <Skeleton icon={<IconDeviceLaptop className="h-6 w-6 text-neutral-500" />}/>,
     icon: <IconDeviceLaptop className="h-6 w-6 text-neutral-500" />,
   },
   {
-    title: "Software Developer Experience",
-    description: "Developed a Student Portal using MERN stack at COEP Pune",
+    title: "Positions of responsibility",
+    description: "Responsible for development of multiple college tech clubs.",
     header: <Skeleton icon={<IconBriefcase className="h-6 w-6 text-neutral-500" />} />,
     icon: <IconBriefcase className="h-6 w-6 text-neutral-500" />,
   },
