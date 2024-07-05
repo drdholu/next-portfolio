@@ -19,6 +19,7 @@ export function BentoGridDemo() {
           description={item.description}
           header={item.header}
           // icon={item.icon}
+          link={item.link}
           className={i === 3 ? "md:col-span-2" : ""}
         />
       ))}
@@ -43,29 +44,34 @@ const items = [
     description: "Proficient in multiple languages (C++, Java, etc.) and tech stacks.",
     header: <Skeleton icon={<IconCode className="h-6 w-6 text-neutral-500" />}/>,
     icon: <IconCode className="h-6 w-6 text-neutral-500" />,
+    link: "/skills"
   },
   {
     title: "Key Projects",
     description: "Worked on multiple personal projects and contributed to many.",
     header: <Skeleton icon={<IconDeviceLaptop className="h-6 w-6 text-neutral-500" />}/>,
     icon: <IconDeviceLaptop className="h-6 w-6 text-neutral-500" />,
+    link: "/projects"
   },
   {
     title: "Positions of responsibility",
     description: "Responsible for development of multiple college tech clubs.",
     header: <Skeleton icon={<IconBriefcase className="h-6 w-6 text-neutral-500" />} />,
     icon: <IconBriefcase className="h-6 w-6 text-neutral-500" />,
+    link: "/positions"
   },
   {
     title: "Education",
     description: "Bachelor of Computer Engineering, College of Engineering Pune Technological University (Expected 2026)",
     header: <Skeleton icon={<IconSchool className="h-6 w-6 text-neutral-500" />} />,
     icon: <IconSchool className="h-6 w-6 text-neutral-500" />,
+    link: "/education"
   },
   {
     title: "Lets Connect",
     description: "hit me up, i dont bite :)",
     header: <Skeleton icon={<IconHeartHandshake className="h-6 w-6 text-neutral-500" />}/>,
     icon: <IconHeartHandshake className="h-6 w-6 text-neutral-500" />,
+    link: "/contact"
   },
 ];
