@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 // import { FlipWords } from "./ui/flip-words";
 import { BentoGridDemo } from "./BentoGrid";
 import { DockDemo } from "./DockDemo";
+import { cn } from "@/lib/utils";
 export function Landing() {
     // const words = ["mern dev?", "producer", "student"];
     return (
@@ -29,7 +30,7 @@ export function Landing() {
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-left "
             >
             Hi, I&apos;m <br/>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400">Paras Dhole</span>
+            <span className="bg-clip-text animate-gradient text-transparent bg-gradient-to-r from-green-400 to-blue-400">Paras Dhole</span>
             <br />
             <DockDemo />
             {/* <Highlight className="">
