@@ -9,13 +9,11 @@ import {NextUIProvider} from "@nextui-org/react";
 export default function Home() {
   return (
     <NextUIProvider>
-      <main className="font-sans">
         {/* <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         /> */}
         <Landing />
-      </main>
     </NextUIProvider>
   );
 }

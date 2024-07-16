@@ -69,24 +69,24 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/drdholu/",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/parasdhole/",
         icon: Icons.linkedin,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-      },
+      // X: {
+      //   name: "X",
+      //   url: "#",
+      //   icon: Icons.x,
+      // },
+      // email: {
+      //   name: "Send Email",
+      //   url: "#",
+      //   icon: Icons.email,
+      // },
     },
   },
 };

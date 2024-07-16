@@ -6,7 +6,7 @@ import { ViewTransitions } from 'next-view-transitions'
 import { ThemeProvider } from "@/components/theme-provider"
 
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Paras' Portfolio",
@@ -21,15 +21,15 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en">
-        <body className={inter.className}>
+        <body>
           <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
+          >
             {children}
-        </ThemeProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ViewTransitions>
