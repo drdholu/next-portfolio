@@ -8,6 +8,7 @@ import {
   IconHeartHandshake,
 } from "@tabler/icons-react";
 import { EvervaultCard } from "./ui/evervault-card";
+import info from "../data/info"
 
 export function BentoGridDemo() {
   return (
@@ -40,38 +41,33 @@ const Skeleton = ({ icon }: { icon: React.ReactNode }) => (
 
 const items = [
   {
-    title: "Web Development Skills",
-    description: "Proficient in multiple languages (C++, Java, etc.) and tech stacks.",
-    header: <Skeleton icon={<IconCode className="h-6 w-6 text-neutral-500" />}/>,
-    icon: <IconCode className="h-6 w-6 text-neutral-500" />,
-    link: "/skills"
+    title: "Skills",
+    description: info.Skills.description,
+    header: info.Skills.header,
+    link: info.Skills.link,
   },
   {
-    title: "Key Projects",
-    description: "Worked on multiple personal projects and contributed to many.",
-    header: <Skeleton icon={<IconDeviceLaptop className="h-6 w-6 text-neutral-500" />}/>,
-    icon: <IconDeviceLaptop className="h-6 w-6 text-neutral-500" />,
-    link: "/projects"
+    title: "Projects",
+    description: info.Projects.description,
+    header: info.Projects.header,
+    link: info.Projects.link,
   },
   {
     title: "Positions of responsibility",
-    description: "Responsible for development of multiple college tech clubs.",
-    header: <Skeleton icon={<IconBriefcase className="h-6 w-6 text-neutral-500" />} />,
-    icon: <IconBriefcase className="h-6 w-6 text-neutral-500" />,
-    link: "/positions"
+    description: info["Positions of Responsibility"].description,
+    header: info["Positions of Responsibility"].header,
+    link: info["Positions of Responsibility"].link
   },
   {
     title: "Education",
-    description: "Bachelor of Computer Engineering, College of Engineering Pune Technological University (Expected 2026)",
-    header: <Skeleton icon={<IconSchool className="h-6 w-6 text-neutral-500" />} />,
-    icon: <IconSchool className="h-6 w-6 text-neutral-500" />,
-    link: "/education"
+    description: info.Education.description,
+    header: info.Education.header,
+    link: info.Education.link
   },
   {
     title: "Lets Connect",
-    description: "hit me up, i dont bite :)",
-    header: <Skeleton icon={<IconHeartHandshake className="h-6 w-6 text-neutral-500" />}/>,
-    icon: <IconHeartHandshake className="h-6 w-6 text-neutral-500" />,
-    link: "/contact"
+    description: info.Contact.description,
+    header: info.Contact.header,
+    link: info.Contact.link
   },
 ];

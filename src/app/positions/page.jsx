@@ -1,14 +1,13 @@
 'use client'
 import React from 'react'
 import GoBack from '@/components/GoBack'
+import PageContainer from '@/components/PageContainer'
 
 const page = () => {
   return (
-    <div>
-      positions
-      <GoBack/>
-    </div>
-    
+    <PageContainer title='Positions'>
+
+    </PageContainer>    
   )
 }
 
