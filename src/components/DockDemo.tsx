@@ -107,6 +107,7 @@ export function DockDemo() {
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       "size-12 rounded-full",
                     )}
+                    // rel="noopener noreferrer" target="_blank"
                   >
                     <item.icon className="size-4" />
                   </Link>
@@ -128,6 +129,7 @@ export function DockDemo() {
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       "size-12 rounded-full",
                     )}
+                    rel="noopener noreferrer" target="_blank"
                   >
                     <social.icon className="size-4" />
                   </Link>
