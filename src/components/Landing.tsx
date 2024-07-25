@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { BentoGridDemo } from "./BentoGrid";
 import { DockDemo } from "./DockDemo";
 import { cn } from "@/lib/utils";
+import { BackgroundBeams } from "./ui/background-beams";
 export function Landing() {
     // const words = ["mern dev?", "producer", "student"];
     return (
         <div className="flex md:flex-row flex-col items-center justify-evenly h-screen p-10">
-
             <motion.h1
             initial={{
                 opacity: 0,

@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
-import { ViewTransitions } from 'next-view-transitions'
-import { ThemeProvider } from "@/components/theme-provider"
-
-
-// const inter = Inter({ subsets: ["latin"] });
+import { ViewTransitions } from 'next-view-transitions';
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Paras' Portfolio",
@@ -15,20 +11,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <ViewTransitions>
       <html lang="en">
         <body>
           <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
           >
-            {children}
+            <HeroHighlight>
+              {children}
+            </HeroHighlight>
           </ThemeProvider>
         </body>
       </html>

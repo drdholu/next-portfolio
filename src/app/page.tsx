@@ -3,7 +3,6 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Landing } from "@/components/Landing";
-import Link from "next/link";
 import {NextUIProvider} from "@nextui-org/react";
 
 export default function Home() {

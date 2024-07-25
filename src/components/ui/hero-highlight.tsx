@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
 
@@ -29,7 +29,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-screen bg-white dark:bg-black w-full group",
+        "relative h-screen group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -62,7 +62,7 @@ export const HeroHighlight = ({
 
 export const Highlight = ({
   children,
-  className, 
+  className,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -76,7 +76,7 @@ export const Highlight = ({
         backgroundSize: "100% 100%",
       }}
       transition={{
-        duration: 1,
+        duration: 2,
         ease: "linear",
         delay: 0.5,
       }}

@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const svgToDataUri = require("mini-svg-data-uri");
+const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 const config: Config = {
@@ -39,7 +39,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        secondary: {
+        secondary: {  
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
@@ -92,21 +92,39 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "shimmer": "shimmer 2s linear infinite",
       },
+      // backgroundImage: {
+      //   'dot-thick-neutral-300': `url("${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#d1d5db"><path d="M0 .5H31.5V32"/></svg>')}")`,
+      //   'dot-thick-neutral-800': `url("${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#374151"><path d="M0 .5H31.5V32"/></svg>')}")`,
+      //   'dot-thick-indigo-500': `url("${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#6366f1"><path d="M0 .5H31.5V32"/></svg>')}")`,
+      // },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
-    function addVariablesForColors({ addBase, theme }: any) {
-      let allColors = flattenColorPalette(theme("colors"));
-      let newVars = Object.fromEntries(
-        Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "bg-dot-thick": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
-
-      addBase({
-        ":root": newVars,
-      });
     },
   ],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config;
