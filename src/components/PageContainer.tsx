@@ -9,7 +9,9 @@ const PageContainer = ({ children, title }: {children: React.ReactNode, title: s
           <GoBack/>
           <h1 className='text-5xl'>{title}</h1>
         </div>
-        {children}
+        <div className='overflow-hidden overflow-y-scroll '>
+          {children}
+        </div>
       </div>
     </div>
   )

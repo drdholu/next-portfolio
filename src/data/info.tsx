@@ -45,21 +45,38 @@ const info = {
         {
           "name": "Unified Student Portal",
           "status": "Ongoing",
+          "link": "",
           "description": "Architected a portal for document management for students and faculty, with robust authentication and a scalable solution using MERN stack.",
           "technologies": ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"]
         },
         {
           "name": "Paint Store App",
           "status": "Ongoing",
+          link: "",
           "description": "Developed a comprehensive paint store ecosystem with customer and salesman apps, a web-admin interface, real-time inventory tracking, and order management features.",
           "technologies": ["ExpressJS", "NodeJS", "ReactJS", "React-Native", "Firebase Firestore"]
         },
         {
           "name": "Dynamic Allocation CLI using van Emde Boas Trees",
           "status": "Completed",
+          link: "https://github.com/drdholu/van-Emde-Boas",
           "description": "Implemented van Emde Boas trees in C to improve operation times and engineered a dynamic application for efficient seat allocation.",
           "technologies": ["C"]
-        }
+        },
+        {
+          "name": "COEP PG Admission Portal",
+          "status": "Completed",
+          link: "http://pgadmission.coep.org.in/",
+          "description": "Contributed to the backend for the official merit list generation",
+          "technologies": ["ReactJS", "NodeJS", "MongoDB", "ExpressJS"]
+        },
+        {
+          "name": "Impressions, COEP",
+          "status": "Completed",
+          link: "https://www.impressionscoeptech.com/",
+          "description": "Designed the official website of Impressions, a cultural fest conducted in COEP.",
+          "technologies": ["HTML", "CSS", "JavaScript"]
+        },
       ],
       header: <Skeleton icon={<IconDeviceLaptop className="h-6 w-6 text-neutral-500" />}/>,
       link: "/projects"
