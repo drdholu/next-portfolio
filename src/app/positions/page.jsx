@@ -5,7 +5,7 @@ import PageContainer from '@/components/PageContainer'
 
 const page = () => {
   return (
-    <PageContainer title='Positions'>
+    <PageContainer title='Positions' loading={true}>
 
     </PageContainer>    
   )

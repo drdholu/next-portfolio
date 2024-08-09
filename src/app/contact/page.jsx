@@ -6,7 +6,7 @@ import PageContainer from '@/components/PageContainer'
 const page = () => {
   
   return (
-    <PageContainer title='Contact'>
+    <PageContainer title='Contact' loading={true}>
 
     </PageContainer>    
   )
